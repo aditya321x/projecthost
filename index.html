@@ -1,177 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aditya Web</title>
         <link rel="icon" href="Aditya photo.jpg">
         <style>
-            /* Body styling */
             body {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background-color: #f4f4f9;
-                margin: 0;
-                padding: 0;
-                color: #333;
+                font-family: Arial, sans-serif;
+                background-color: #e0f7fa; /* Light blue background */
+                color: #004d99; /* Dark blue text */
             }
-
-            /* General container and center alignment */
-            .container {
-                max-width: 80%;
-                margin: 0 auto;
-                padding: 20px;
-                text-align: center;
-            }
-
-            /* Header and sub-header styling */
             h1, h2 {
-                font-family: 'Roboto', sans-serif;
-                font-weight: 700;
-                color: #2c3e50;
+                color: #003366; /* Darker shade of blue for headings */
             }
-
-            h1 {
-                font-size: 36px;
+            a {
+                color: #004d99;
+            }
+            /* Styling for form container */
+            .container {
+                width: 100%;
                 margin-top: 20px;
             }
-
-            h2 {
-                font-size: 24px;
-            }
-
-            /* Content section styling */
-            p {
-                font-size: 18px;
-                line-height: 1.6;
-                color: #555;
-                text-align: justify;
-            }
-
-            img {
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            }
-
-            /* Contact Info styling */
-            .contact-info img {
-                margin: 0 15px;
-            }
-
-            a {
-                text-decoration: none;
-                color: #3498db;
-            }
-
-            /* Form Styling */
             form {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-top: 20px;
             }
-
             label, input, select, textarea {
                 margin: 10px 0;
                 padding: 10px;
-                width: 100%;
+                width: 50%;
                 max-width: 400px;
-                font-size: 16px;
-                border-radius: 5px;
-                border: 1px solid #ccc;
             }
-
             input[type="submit"] {
-                background-color: #3498db;
+                background-color: #4CAF50;
                 color: white;
-                width: auto;
-                border: none;
                 cursor: pointer;
+                width: auto;
             }
-
             input[type="submit"]:hover {
-                background-color: #2980b9;
+                background-color: #45a049;
             }
-
-            /* Thank You Message Styling */
             .thank-you-message {
                 display: none;
             }
-
-            /* Footer styling */
-            .footer {
-                margin-top: 40px;
-                font-size: 14px;
-                color: #888;
+            footer {
+                text-align: center;
+                margin-top: 30px;
+                padding: 10px;
+                background-color: #003366; /* Footer background color */
+                color: white; /* Footer text color */
             }
         </style>
     </head>
 
     <body>
-        <div class="container">
+        <center>
             <h1>WELCOME TO ADITYA'S FIRST WEBSITE</h1>
             <h2>Gaming is not a hobby, it's a lifestyle</h2>
+        </center>
 
-            <hr>
+        <hr>
 
+        <center>
             <h1>Introduction</h1>
             <p>Welcome to My World! I’m Aditya, an aspiring game developer and tech enthusiast with a passion for innovation and creativity. I’m pursuing a BE in Computer Science Engineering, specializing in Cyber Security. My journey began with a love for video games, which evolved into a desire to create digital experiences.</p>
             <p>I’m always exploring new tools and languages to expand my skills, from Python and C++ to game development frameworks. My goal is to craft unique, immersive gaming experiences that not only entertain but push the boundaries of what's possible. This website showcases my projects, skills, and journey as a developer. Feel free to explore and get in touch!</p>
+        </center>
 
-            <img src="Aditya photo.jpg" alt="Aditya's photo" width="300" height="400">
+        <img src="Aditya photo.jpg" alt="Aditya's photo" width="300" height="400">
 
-            <hr>
+        <hr>
 
+        <center>
             <h1>Contact Info</h1>
-            <div class="contact-info">
-                <img src="whatsapp logo.jpg" width="50" height="50">
-                <h2>+91 8248082498</h2>
+            <img src="whatsapp logo.jpg" width="50" height="50">
+            <h2>+91 8248082498</h2>
 
-                <img src="insta logo.jpg" width="50" height="50">
-                <h2><a href="https://www.instagram.com/mr_aditya_2k06">@mr_aditya_2k06</a></h2>
+            <img src="insta logo.jpg" width="50" height="50">
+            <h2><a href="https://www.instagram.com/mr_aditya_2k06?igsh=MXV3dDU4OGNhZmFoZw==">@mr_aditya_2k06</a></h2>
 
-                <img src="linked in.png" width="50" height="50">
-                <h2><a href="https://www.linkedin.com/in/aditya1465/">LinkedIn Profile</a></h2>
+            <img src="linked in.png" width="50" height="50">
+            <h2><a href="https://www.linkedin.com/in/aditya1465/">LinkedIn Profile</a></h2>
 
-                <img src="mail logo.png" width="50" height="50">
-                <h2>adityaalex631@gmail.com</h2>
-            </div>
+            <img src="mail logo.png" width="50" height="50">
+            <h2>adityaalex631@gmail.com</h2>
+        </center>
 
-            <hr>
+        <hr>
 
-            <h2>Your Opinion About My Web</h2>
-            <form id="opinionForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <div class="container">
+            <center>
+                <h2>Your Opinion About My Web</h2>
+                <form id="opinionForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
 
-                <label for="number">Number:</label>
-                <input type="number" id="number" name="number" required>
+                    <label for="number">Number:</label>
+                    <input type="number" id="number" name="number" required><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
 
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br>
 
-                <label for="comments">Opinion:</label>
-                <textarea id="comments" name="comments" rows="4"></textarea>
+                    <label for="comments">Opinion:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea><br>
 
-                <input type="submit" value="Submit">
-            </form>
+                    <input type="submit" value="Submit">
+                </form>
+            </center>
+        </div>
 
-            <div class="thank-you-message">
+        <div class="container thank-you-message">
+            <center>
                 <h1>Thank You!</h1>
                 <p>Your submission has been successfully received. We will get back to you shortly.</p>
                 <a href="index.html" class="button">Go Back to Home</a>
-            </div>
+            </center>
         </div>
 
-        <div class="footer">
-            <p>&copy; 2024 Aditya's Portfolio. All rights reserved.</p>
-        </div>
+        <footer>
+            &copy; 2024 Aditya's Website. All rights reserved.
+        </footer>
 
         <script>
             // Handle form submission
